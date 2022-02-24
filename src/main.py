@@ -7,13 +7,15 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 
-from scenarios import wikipedia
+from scenarios import wikipedia, amazon, google
 
 driver = drivers.chrome_driver()
 
 scenarios = [
      lambda: wikipedia.visit(driver),
      lambda: wikipedia.visit(driver),
+     lambda: amazon.visit(driver),
+     lambda: google.visit(driver)
 ]
 
 
