@@ -14,6 +14,9 @@ def open_new_tab(driver):
     driver.execute_script("window.open('');")
     driver.switch_to.window(driver.window_handles[1])
 
+def wait(time):
+    time.sleep(time)
+
 # Waits a random time between and 3 and 5 seconds, to avoid bot detection.
 def random_wait():
-    time.sleep(randint(3,5))
+    time.sleep(randint(1,2))
