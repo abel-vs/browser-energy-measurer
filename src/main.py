@@ -1,6 +1,17 @@
 import drivers
 import time
+from scenarios import wikipedia
 
-driver = drivers.chrome_driver()
-time.sleep(10)
-driver.quit()
+browser = drivers.chrome_driver()
+
+scenarios = [
+     lambda: wikipedia.visit(browser),
+     lambda: wikipedia.visit(browser),
+]
+
+
+for scenario in scenarios:
+    scenario()
+
+time.sleep(3)
+browser.close()
