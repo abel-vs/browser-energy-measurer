@@ -12,10 +12,10 @@ def immediate_scroll(driver):
 
 def open_new_tab(driver):
     driver.execute_script("window.open('');")
-    driver.switch_to.window(driver.window_handles[1])
+    driver.switch_to.window(driver.window_handles[-1]) # Switch focus to newest tab
 
-def wait(time):
-    time.sleep(time)
+def wait(duration):
+    time.sleep(duration)
 
 # Waits a random time between and 3 and 5 seconds, to avoid bot detection.
 def random_wait():

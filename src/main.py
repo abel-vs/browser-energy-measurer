@@ -12,14 +12,14 @@ driver = drivers.chrome_driver()
 scenarios = [
      lambda: wikipedia.visit(driver),
      lambda: amazon.visit(driver),
-     lambda: youtube.visit(driver),
-     # lambda: google.visit(driver),
-     lambda: soundcloud.visit(driver)
+     lambda: soundcloud.visit(driver),
+     lambda: amazon.visit(driver),
+     lambda: google.visit(driver)
 ]
 
 for scenario in scenarios:
     scenario()
     open_new_tab(driver)
 
-wait(3)
+wait(10)
 driver.quit()
