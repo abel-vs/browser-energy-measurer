@@ -9,11 +9,11 @@ from selenium.webdriver.common.keys import Keys
 
 from scenarios import wikipedia
 
-browser = drivers.chrome_driver()
+driver = drivers.chrome_driver()
 
 scenarios = [
-     lambda: wikipedia.visit(browser),
-     lambda: wikipedia.visit(browser),
+     lambda: wikipedia.visit(driver),
+     lambda: wikipedia.visit(driver),
 ]
 
 
@@ -21,4 +21,4 @@ for scenario in scenarios:
     scenario()
 
 time.sleep(3)
-browser.close()
+driver.quit()
