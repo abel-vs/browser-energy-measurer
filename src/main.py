@@ -1,11 +1,17 @@
 import drivers
 import time
-
-from mechanisms import slow_scroll
+from scenarios import wikipedia
 
 browser = drivers.chrome_driver()
-browser.get("https://en.wikipedia.org")
-# browser.execute_script("window.scrollTo(0,document.body.scrollHeight)") #Immediate scroll
-slow_scroll(browser, 10)
+
+scenarios = [
+     lambda: wikipedia.visit(browser),
+     lambda: wikipedia.visit(browser),
+]
+
+
+for scenario in scenarios:
+    scenario()
+
 time.sleep(3)
 browser.close()
