@@ -13,8 +13,7 @@ scenarios = [
      lambda: soundcloud.visit(driver),
      lambda: wikipedia.visit(driver),
      lambda: amazon.visit(driver),
-
-     lambda: youtube.visit(driver)
+     lambda: youtube.visit(driver),
      # lambda: google.visit(driver),
 ]
 
