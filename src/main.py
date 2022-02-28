@@ -7,19 +7,20 @@ from scenarios import wikipedia, amazon, google, youtube
 from mechanisms import open_new_tab, wait
 from scenarios import wikipedia, soundcloud, amazon, google
 
-driver = drivers.chrome_driver()
+driver = drivers.edge_driver()
 
 scenarios = [
+     lambda: soundcloud.visit(driver),
      lambda: wikipedia.visit(driver),
      lambda: amazon.visit(driver),
-     lambda: youtube.visit(driver),
+
+     lambda: youtube.visit(driver)
      # lambda: google.visit(driver),
-     lambda: soundcloud.visit(driver)
 ]
 
 for scenario in scenarios:
     scenario()
     open_new_tab(driver)
 
-wait(3)
+time.sleep(1)
 driver.quit()

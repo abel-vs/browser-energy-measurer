@@ -35,7 +35,7 @@ def visit(driver):
 
     driver.get(url)
 
-    time.sleep(1)
+    time.sleep(1.3)
 
     driver.execute_script("""
     var l = document.getElementsByClassName("v2-dialog style-scope ytd-consent-bump-v2-lightbox")[0];
