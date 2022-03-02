@@ -5,3 +5,4 @@
 5. External peripherals were all unplugged (monitor, keyboard, mouse)
 6. Night light was on
 7. Notifications were all turned off 
+8. All background applications were closed
