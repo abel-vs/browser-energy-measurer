@@ -1,0 +1,18 @@
+
+Chrome stats for 30 runs:
+Cumulative energy (Joules)
+Mean: 1205.8447469 | Variance: 2053.604082541523 | Standard deviation: 45.316708646386964 | p95: 1281.9581847000002 | p99: 1283.69146827 | p100: 1284.273132
+Avg processor power (Watt)
+Mean: 14.4157429 | Variance: 0.2741364232506898 | Standard deviation: 0.5235803885275783 | p95: 15.2595635 | p99: 15.306422959999999 | p100: 15.316073
+
+Firefox stats for 30 runs:
+Cumulative energy (Joules)
+Mean: 1257.4438781666665 | Variance: 6260.933972807912 | Standard deviation: 79.12606380206154 | p95: 1404.5168606 | p99: 1409.55503426 | p100: 1409.91626
+Avg processor power (Watt)
+Mean: 15.1863447 | Variance: 0.8381876193013438 | Standard deviation: 0.9155258703615883 | p95: 16.75532225 | p99: 16.89504093 | p100: 16.924558
+
+Edge stats for 30 runs:
+Cumulative energy (Joules)
+Mean: 1287.2077249 | Variance: 3778.5068984323243 | Standard deviation: 61.46956074702604 | p95: 1380.1873687500001 | p99: 1399.15319748 | p100: 1406.140686
+Avg processor power (Watt)
+Mean: 14.752587033333333 | Variance: 0.3456864472475655 | Standard deviation: 0.5879510585478739 | p95: 15.7878505 | p99: 15.84363283 | p100: 15.853891
