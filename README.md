@@ -1,4 +1,4 @@
-# browser-energy-measurer
+# Browser Energy Measurer
 Automated Energy Measurement of Browsers.
 
 ## Set up
