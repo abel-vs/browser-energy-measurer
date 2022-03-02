@@ -1,0 +1,7 @@
+1. Bluetooth was off
+2. Adaptive light off, brightness was set to lowest
+3. Computer was plugged in, running over night
+4. Location was off
+5. External peripherals were all unplugged (monitor, keyboard, mouse)
+6. Night light was on
+7. Notifications were all turned off 
