@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import os
+import matplotlib.pyplot as plt
 
 relative_path = '../30 runs/'
 
@@ -93,3 +94,22 @@ with open("outputs.txt", "w") as w:
     w.write(get_stats(edge_avg_power))
 
 w.close()
+
+# PRINT BOXPLOTS
+energy_data = [chrome_cum_energy, firefox_cum_energy, edge_cum_energy]
+energy_fig = plt.figure()
+energy_ax = energy_fig.add_subplot(111)
+energy_ax.set_title('Cumulative Energy per Browser')
+energy_ax.set_ylabel('Cumulative Energy (Joules)')
+energy_ax.set_xticklabels(["Chrome", "Firefox", "Edge"])
+energy_bp = energy_ax.boxplot(energy_data)
+
+power_data = [chrome_avg_power, firefox_avg_power, edge_avg_power]
+power_fig = plt.figure()
+power_ax = power_fig.add_subplot(111)
+power_ax.set_title('Average Processor Power per Browser')
+power_ax.set_ylabel('Average Processor Power (Watt)')
+power_ax.set_xticklabels(["Chrome", "Firefox", "Edge"])
+power_bp = power_ax.boxplot(power_data)
+
+plt.show()
